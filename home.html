@@ -12,19 +12,58 @@
         <!-- <script src="js/script.js"></script> -->
     </head>
 
-    <body>
+    <body id="bckgd-color">
       
         <!-- top nav bar -->
-        <span>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="library.html">Library</a> </li>
-            </ul>
-        </span>
+         <header>
+            <a class="nav-home" id="active_link" href="home.html">Home</a>
+            <!-- <p class="nav-home">Home</p> -->
+            <nav>
+                <ul>
+                    <li> <a href="messages.html">Messages</a></li>
+                    <li> <a href="library.html">Library</a> </li>
+                    <li> <a href="upload.html">Upload</a></li>
+                    <li> <a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+         </header>
+        
 
         <!-- main content -->
-        <h1>Photo Diary</h1>
-        <p>Lorem ipsum blah blah blah</p>
+        <h1 class="txt-ctr">Todays Date</h1>
+
+        <!-- FLEXBOX CONTAINER -->
+        <div class="photo-highlight-container">
+            <!-- img, messgae, and update buttons -->
+            <img class="photo-highlight-img flex-grow" src="./imgs/stockphoto_left_pg_1.jpg" alt="stock image of a happy dad and daughter at a town fair">
+            <p><i>Message Lorem ipsum blah blah blah</i></p>
+        </div>
+        <div class="row-wrap">
+            <button class="ph-btn">Update</button>
+            <button class="ph-btn">Share</button>
+        </div>
+
+        <!-- GRID CONTAINER: previous day/next day message -->
+        <div class="grid-wrapper">
+            <div class="grid-item">
+                <div class="grid-subtitle"><i>Previous</i></div>
+                <div class="grid-img-container">
+                    <img src="./imgs/stockphoto_left_pg_1.jpg" alt="stock image of a happy dad and daughter at a town fair">
+                    <div class="overlay"><i>00/00/0000</i></div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-subtitle"><i>Next</i></div>
+                <div class="grid-img-container">
+                    <img src="./imgs/stockphoto_left_pg_1.jpg" alt="stock image of a happy dad and daughter at a town fair">
+                    <div class="overlay"><i>00/00/0000</i></div>
+                </div>
+            </div>
+
+        </div>
+     
 
         <script src="js/script.js"></script>
     </body>

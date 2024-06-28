@@ -1,0 +1,41 @@
+.grid-wrapper-messages{
+    display: grid;
+    /* grid-template-columns: fit-content(70ch) fit-content(80ch) fit-content(80ch); */
+    /* grid-template-columns: repeat(3, minmax(min-content, 1fr)); */
+    grid-template-columns: repeat(3, fit-content(80ch));
+    grid-template-rows: repeat(3, minmax(auto, 1fr));
+
+    /* grid-template-rows: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: repeat(3, minmax(min-content, 1fr)); */
+
+    align-items: center;
+}
+
+.grid-item-message{
+    margin: 50px 25px 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.grid-item-message p:hover{
+    color: rgb(117, 132, 108);
+    /* color: white; */
+    cursor: pointer;
+}
+
+.older{
+    color: rgb(66, 61, 61);
+}
+
+.message-1{
+    grid-row-start: 1.5;
+    /* grid-row-end: ; */
+    grid-column-start: 1.5;
+    /* grid-column-end: ; */
+}
+
+.top-overlap{
+    z-index: 1;
+}

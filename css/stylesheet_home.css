@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* sourced:  https://www.youtube.com/watch?v=PwWHL3RyQgk&t=22s*/
+*{
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 6px 5px #93a389;
+    background-color: #cadcbe;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 3vh;
+}
+
+
+nav ul{
+    list-style: none;
+    margin-right: 3vw;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: #93a389;
+}
+
+nav ul li a:active{
+    color: #93a389;
+}
+
+header a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+header a:hover{
+    color: #93a389;
+}
+
+header a:active{
+    color: #93a389;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* CLASSES */
+
+.nav-home{
+    cursor: pointer;
+    margin-left: 3vw;
+}
+
+.txt-ctr{
+    text-align: center;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-item .grid-img-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item .subtitle{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: gray;
+    transition: transform 0.3s ease;
+}
+
+.grid-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover .overlay{
+    transform: scale(1.05);  
+}
+
+.grid-item:hover .grid-subtitle{
+    font-size: 20px; 
+    transform: translateY(-10px);
+}
+
+.grid-item:hover img{
+    transform: scale(1.05);  
+}
+
+
+
+
+
+.photo-highlight-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    gap: 20px;
+    /* border: 2px solid black; */
+}
+
+.row-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+/* .photo-highlight-item{
+    border: 2px solid purple;
+} */
+
+.photo-highlight-img{
+    object-fit: cover;  /* or use 'contain' if we want it cropped */
+    max-height: 80%;
+    max-width: 100%;      
+}
+
+.photo-highlight-container p{
+    margin: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.ph-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #cadcbe;
+    color: white;
+    font-size: 14px;
+}
+
+.ph-btn:hover{
+    background-color: #adbca3;
+    cursor: pointer;
+}
+
+.ph-btn:active{
+    background-color: #93a389;
+}
+
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.wrapper{
+    margin: 10px;
+    padding: 10px;
+}
+
+.wrapper-item{
+    margin: 10%;
+}
+
+.wrapper-item h2{
+    margin: 10px;
+}
+
+.wrapper-item p{
+    margin: 10px;
+    padding: 15px;
+    margin-bottom: 10%;
+}
+
+.jmp-header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #cadcbe;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.jmp-header a{
+    text-decoration: none;
+    display: inline-block;
+    color: white
+}
+
+.jmp-header a:hover{
+    color: #93a389;
+}
+
+/* IDS */
+#active_link{
+    color: #5c6655;
+}
+
+#bckgd-color{
+    background-color: #F7F4EC;;
+}

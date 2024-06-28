@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Zoryah Gray">
         <meta name="description" content="This is a website designed throughout the course of Northwestern's CS396 Web Development.">
-        <title>Your Library</title>
+        <title>Message Wall</title>
         <link rel="stylesheet" href="css/stylesheet_home.css">
-        <link rel="stylesheet" href="css/stylesheet_library.css">
+        <link rel="stylesheet" href="css/stylesheet_messages.css">
     </head>
 
     <body id="bckgd-color">
@@ -19,26 +19,31 @@
             <!-- <p class="nav-home">Home</p> -->
             <nav>
                 <ul>
-                    <li> <a href="messages.html">Messages</a></li>
-                    <li> <a id="active_link" href="library.html">Library</a> </li>
+                    <li> <a id="active_link" href="messages.html">Messages</a></li>
+                    <li> <a href="library.html">Library</a> </li>
                     <li> <a href="upload.html">Upload</a></li>
                     <li> <a href="about.html">About</a></li>
                 </ul>
             </nav>
          </header>
 
-        <!-- TITLE -->
-         <h1>Your Photo Library</h1>
+        <!-- GRID CONTAINER w/ overlapping grid items -->
+        <div class="grid-wrapper-messages">
+            <!-- grid item -- overlapping grid box -->
+            <div class="grid-item-message">
+                <p>ITEM 1: TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+            </div>
 
-        <!-- GRID CONTAINER -->
-         <div>
-            <!-- grid item : library item -->
-            <div>
-                <!-- flexbox container if a grid item cant be flex -->
-                <div></div>
-                <!-- image and then on the right side is text info -->
-                 <img href="" alt="">
-                 <p><i>date</i> <br> text text text</p>
+            <div class="grid-item-message older">
+                <p>ITEM 2: TEXT TEXT</p>
+            </div>
+
+            <div class="grid-item-message ">
+                <p>ITEM 3: TEXT TEXT</p>
+            </div>
+
+            <div class="grid-item-message older">
+                <p>ITEM 4: TEXT TEXT</p>
             </div>
          </div>
 
